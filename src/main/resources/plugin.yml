@@ -1,0 +1,30 @@
+name: RealEconomy
+version: 1.0
+main: com.example.RealEconomy
+api-version: 1.20
+commands:
+  balance:
+    description: 残高を確認
+    usage: /balance
+  pay:
+    description: 他のプレイヤーに送金
+    usage: /pay <player> <amount>
+  stock:
+    description: 株取引システム
+    usage: /stock [buy|sell|info|portfolio]
+  jobs:
+    description: 職業に就く・働く
+    usage: /jobs [list|join|quit|work]
+  bank:
+    description: 銀行操作
+    usage: /bank [deposit|withdraw|loan|repay|balance]
+  infra:
+    description: インフラ投資（道路・発電所・鉄道など）
+    usage: /infra [list|invest|status]
+  tax:
+    description: 固定資産税の確認・支払い
+    usage: /tax [info|pay]
+  economyadmin:
+    description: 経済システムを管理する（OP専用）
+    usage: /economyadmin [株価|税金|残高調整]
+    permission: realeconomy.admin
